@@ -6,8 +6,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 import com.example.springtest.dto.NewsDto;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -44,6 +46,16 @@ public class NewsController {
 
         }
         return list;
+    }
+
+    @RequestMapping(value="detail/{seq}", method=RequestMethod.GET)
+    public NewsDto detail(@PathVariable("seq") int seq){
+        NewsDto newsDto = new NewsDto();
+        newsDto.setNewsId(seq);
+        newsDto.setNewsTitle("newsTitle");
+        newsDto.setNewsContent("newsContent");
+        newsDto.setNewsDate(new Date());
+        return newsDto;
     }
     
 }
