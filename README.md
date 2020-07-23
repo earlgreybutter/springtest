@@ -1,3 +1,5 @@
 # springtest
 springboot + gradle + mybatis
-DB연동확인함 
+success DB Connection 
+Thanks to https://www.donnert.net/85 
+about things related with News 
