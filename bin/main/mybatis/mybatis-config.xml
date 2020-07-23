@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<configuration>
-    <mappers>
-        <mapper resource="src\main\resources\mybatis\mapper\EarlgreyMapper.xml"/>
-        <!-- 경로가 안맞다고 생각중이다.  -->
-    </mappers>
-</configuration>
